@@ -1,0 +1,7 @@
+{
+  "name": "Figma React Plugin",
+  "id": "figma-react-plugin-001",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui/index.html"
+}
