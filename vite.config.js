@@ -8,7 +8,13 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
     rollupOptions: {
-      input: "ui/index.html",
+      input: {
+        code: "code.js", // ou src/main.ts
+        ui: "ui/index.html",
+      },
+      output: {
+        entryFileNames: "[name].js",
+      },
     },
   },
 });
