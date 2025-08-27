@@ -7,14 +7,5 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
-    rollupOptions: {
-      input: {
-        code: "code.js", // ou src/main.ts
-        ui: "ui/index.html",
-      },
-      output: {
-        entryFileNames: "[name].js",
-      },
-    },
   },
 });
