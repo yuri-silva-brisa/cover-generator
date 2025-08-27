@@ -1,42 +1,41 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Ou a cor de fundo padrão do DS Ion */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.plugin-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 16px;
+  gap: 24px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.plugin-form-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.plugin-footer {
+  flex-shrink: 0;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb; /* Cor de borda do DS Ion */
+  display: flex;
+  gap: 12px;
 }
 
-.card {
-  padding: 2em;
+/* Podemos manter a customização da barra de rolagem, pois é um bom detalhe de UX */
+::-webkit-scrollbar {
+  width: 8px;
 }
-
-.read-the-docs {
-  color: #888;
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d1d5db; /* Cor do DS Ion */
+  border-radius: 10px;
 }
